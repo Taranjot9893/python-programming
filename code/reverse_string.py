@@ -1,7 +1,12 @@
-def reverse_string(text):
-    return text[::-1]
+def reverse_string(s):
+    result = ""
+
+    for char in s:
+        result = char + result
+
+    return result
 
 
 if __name__ == "__main__":
-    text = input("Enter a string: ")
-    print("Reversed string is:", reverse_string(text))
+    s = input("Enter a string: ")
+    print("Reversed string:", reverse_string(s))
